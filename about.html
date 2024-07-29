@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithUs | ABOUT US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+  </head> 
+
+<body>
+  <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Photos/logo1.png" alt="CodeWithUs"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="project.html">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+      </nav>
+
+
+  <!----projects-->
+<section class="Our Mission">
+  <h1>Our Mission</h1>
+  <p>At CodeWithUs, we aim to empower the next generation by providing accessible and high-quality education in programming and technology. Through interactive workshops, collaborative projects, and mentorship, we strive to inspire and equip young minds with the skills and knowledge needed to thrive in the digital world.</p>
+
+  <div class="row">
+    <div class="project-col">
+        <h3>Educating Youth</h3>
+        <p>We are dedicated to empowering children by offering educational classes and resources that provide them with essential skills and knowledge in computer science and technology. Our goal is to ignite a passion for the technological aspects of STEM, especially among those who have not yet had the opportunity to explore these fields.</p>
+    </div>
+
+      <div class="project-col">
+          <h3>Bridging the Digital Divide</h3>
+          <p>We are committed to bridging the digital divide by making computer science and technology education accessible to all children. We strive to provide resources and opportunities to those who have been historically underserved or lack access to technology. By fostering digital literacy and technical skills, we aim to ensure that every child has the chance to succeed in our increasingly digital world.</p>
+      </div>
+      <div class="project-col">
+        <h3>Promoting Lifelong Learning</h3>
+        <p>Through our efforts, we aim to expand opportunities and open new doors for youth by encouraging curiosity, creativity, and innovation. By nurturing a lifelong passion for learning and exploration in technology, we empower children to continuously grow and thrive in an ever-evolving digital world. Our dedication to lifelong learning ensures that students gain valuable skills and cultivate a mindset of ongoing growth and discovery.</p>
+    </div>
+  </div>
+  <div class="purple-btn">
+    <a href="project.html" class="hero-btn">Our Projects</a>
+  </div>
+</section>
+
+
+
+
+
+
+    <script>
+      var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right ="0";
+    }
+    function hideMenu(){
+      navLinks.style.right ="-200px";
+    }
+   </script>
+
+</body>
+</html>
