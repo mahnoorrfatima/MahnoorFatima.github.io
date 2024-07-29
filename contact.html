@@ -1,0 +1,75 @@
+<!DOCTYPE html>>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithUs | CONTACT US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+  </head> 
+
+<body>
+  <section class="subbb-header">
+      <nav>
+        <a href="index.html"><img src="Photos/logo1.png" alt="CodeWithUs"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="project.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+      </nav>
+
+</section>
+
+<section class="ctaa">
+    <h1>CONTACT US</h1>
+    <div class="contact-col">
+        <div class="button-container">
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="comment" placeholder="Comment" required>
+            <button type="submit" class="button">SUBMIT</button>
+
+
+
+        </form>
+        </div>
+    </div>
+    </section>
+
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a student-led international NGO dedicated to empowering the next generation through education in computer science and technology.</p>
+        <div class="iconss">
+
+          <a href="https://www.instagram.com/codeewithus_/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+      </section>
+
+    <script>
+      var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right ="0";
+    }
+    function hideMenu(){
+      navLinks.style.right ="-200px";
+    }
+   </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+
+</body>
+</html>
