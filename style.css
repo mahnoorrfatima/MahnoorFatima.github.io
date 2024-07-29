@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithUs | OUR PROJECTS</title>
+
+    <!-- Font and stylesheet links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head> 
+
+<body>
+    <section class="subb-header">
+        <nav>
+            <!-- Correct the image path if needed -->
+            <a href="index.html"><img src="Photos/logo1.png" alt="CodeWithUs"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="project.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>Our Projects</h1>
+        <div class="row">
+            <div class="about-col">
+                <img src="Photos/csss.jpg" alt="Collaborations">
+                <div class="layer">
+                    <h2>Collaborations</h2>
+                </div>
+            </div>
+            <div class="about-col">
+                <img src="Photos/work.jpg" alt="Workshops">
+                <div class="layer">
+                    <h2>Workshops</h2>
+                </div>
+            </div>
+            <div class="about-col">
+                <img src="Photos/follow.jpg" alt="Interactive classes">
+                <div class="layer">
+                    <h2>Interactive classes</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a student-led international NGO dedicated to empowering the next generation through education in computer science and technology.</p>
+        <div class="iconss">
+            <a href="https://www.instagram.com/codeewithus_/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}/* Add missing semicolons and colons */
+.text-box {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+p {
+    color: #6f1f83;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.layer h2 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.about {
+    color: black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+.header {
+    min-height : 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photos/space-7709489.jpg) ;
+    background-position: center;
+    background-size: cover ;
+    position : relative;
+}
+nav{
+    display : flex;
+    padding : 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background: #6f1f83;
+    display:  block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.text-box{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin : 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #6f1f83;
+    background: #6f1f83;
+    transition: 1s;
+}
+nav.fa{
+    display: none;
+}
+@media(max-width: 700px) {
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #6f1f83;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+.Our Mission{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: aquamarine;
+}
+h1{
+    font-size: 38px;
+    font-weight:600;
+    text-align:center;
+    margin-top: 20px;
+}
+p{
+    color: #6f1f83
+    font-size: 18px;
+    font-weight: 300;
+    line-weight:22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-between;
+}
+.project-col{
+    flex-basis: 31%;
+    background: #cd94db;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition:0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.project-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.9);
+}
+@media(max-width:700 px){
+    .row{
+        flex-direction: column;
+    }
+}
+.about{
+    color:black;
+    width: 80%
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+
+}
+.about-col{
+    flex-basis: 32%;
+    border-radius:10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.about-col img{
+    width:100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(228, 203, 236, 0.9);
+}
+.layer h2{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left:50%
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.layer:hover h2{
+    bottom:49%;
+    opacity:1;
+}
+
+.cta{
+    margin:100px;
+    width:80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Photos/technology-7111801.jpg);
+    background-position: center ;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color:#f1eaf3;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width:700px){
+    .cta h1{
+        font-size:24px;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #cd94db;
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.iconss{
+    color: #491556;
+    cursor: pointer;
+}
+/*-------about us---------*/
+.sub-header{
+    height:50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photos/chris-ried-ieic5Tq8YMk-unsplash.jpg);
+   background-position: center;
+   background-size:center;
+    text-align: center ;
+    color: #000000;
+}
+.sub-header h1{
+    color: white;
+}
+.sub-header p{
+    font-weight: 400;
+    margin-top: 75px;
+}
+.purple-btn{
+    border: solid #6f1f83;
+    color: #6f1f83;
+}
+
+.subb-header{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photos/laptops-at-workstations-coding.jpg);
+   background-position: center;
+   background-size:center;
+    text-align: center ;
+    color: white;
+}
+.subb-header h1{
+    color: white;
+}
+
+.contact-col input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom:17px;
+    outline: none;
+    border : 1px solid #ccc;
+}
+.contact-col button{
+
+
+    background-color: #6f1f83; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get the element to line up correctly */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 12px; /* Rounded corners */
+    transition-duration: 0.4s; /* 0.4 second transition effect to hover */
+  }
+
+  /* Button Hover Style */
+  .button:hover {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: 2px solid #edb5ec; /* Green border */
+  }
+  .button-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.subbb-header{
+    height:50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photos/developer-8764523_1920.jpg);
+   background-position: center;
+   background-size:center;
+    text-align: center ;
+    color: #000000;
+}
+.sub-header h1{
+    color: white;
+}
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  .block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
